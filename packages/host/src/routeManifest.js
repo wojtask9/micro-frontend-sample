@@ -2,7 +2,7 @@ const routeManifest = [
   {
     remote: {
       module: 'app1',
-      entry: 'http://localhost:5011/remoteEntry.js',
+      entry: 'http://localhost:5021/remoteEntry.js',
     },
     route: {
       name: 'app1',
@@ -15,7 +15,7 @@ const routeManifest = [
   {
     remote: {
       module: 'app2',
-      entry: 'http://localhost:5012/remoteEntry.js',
+      entry: 'http://localhost:5022/remoteEntry.js',
     },
     route: {
       name: 'app2',

@@ -6,6 +6,7 @@
 import { ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { useModuleFederation } from '@/plugins/federationPlugin';
+import { getInstance } from '@module-federation/runtime';
 
 import routeManifest from '../routeManifest'; // Import the route manifest
 

@@ -12,10 +12,20 @@ export default defineConfig({
       exposes: {
         './entry': './src/entry.js',
       },
-      shared: ['vue'],
+      shared: {
+        vue: {
+          singleton: true,
+        }
+      }, // Ensure shared dependencies are listed
     }),
   ],
-  server: {
-    port: 5012,
+  build: {
+    target: "esnext"
   },
+  server: {
+    port: 5022,
+  },
+  preview: {
+        port: 5022,
+    },
 });

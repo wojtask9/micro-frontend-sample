@@ -1,4 +1,4 @@
-import { init, loadRemote as _loadRemote } from '@module-federation/runtime';
+import { init, loadRemote as _loadRemote, registerRemotes } from '@module-federation/runtime';
 
 /**
  * This function initializes the module federation plugin.
@@ -11,11 +11,7 @@ export const federationPlugin = {
       entry: remote.entry,
       type: 'module',
     }));
-
-    init({
-      name: 'host',
-      remotes: mfRemotes,
-    });
+    registerRemotes(mfRemotes);
   },
 };
 
