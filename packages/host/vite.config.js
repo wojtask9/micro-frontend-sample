@@ -10,6 +10,7 @@ export default defineConfig({
     federation({
       name: 'host',
       filename: 'remoteEntry.js', // Entry point for the host's own remote modules
+      dts: false,
       shared: {
         vue: {
           singleton: true,
@@ -23,12 +24,12 @@ export default defineConfig({
     },
   },
   build: {
-    target: "esnext"
+   //target: "esnext"
   },
   server: {
     port: 5020,
   },
   preview: {
-        port: 5020,
-    },
+    port: 5020,
+  },
 });

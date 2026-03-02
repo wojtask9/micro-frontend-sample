@@ -8,7 +8,10 @@
     "dev": "lerna run dev",
     "build": "lerna run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@module-federation/runtime": "^2.0.1",
+    "@module-federation/sdk": "^2.0.1"
+  },
   "devDependencies": {
     "lerna": "^9.0.0"
   }

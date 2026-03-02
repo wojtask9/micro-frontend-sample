@@ -9,6 +9,7 @@ export default defineConfig({
     federation({
       name: 'app1',
       filename: 'remoteEntry.js',
+      dts: false,
       exposes: {
         './entry': './src/entry.js',
       },
@@ -20,12 +21,12 @@ export default defineConfig({
     }),
   ],
   build: {
-    target: "esnext"
+    //target: "esnext"
   },
   server: {
     port: 5021,
   },
   preview: {
-        port: 5021,
-    },
+    port: 5021,
+  },
 });
